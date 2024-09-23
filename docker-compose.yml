@@ -1,7 +1,7 @@
 version: '3'
 services:
   www:
-    image: php:apache
+    build: .
     volumes:
       - "./:/var/www/html" #sync proj dir with container dir
     ports:
